@@ -1,0 +1,7 @@
+numpy>=2.2.3
+matplotlib>=3.8.3
+pillow>=11.1.0
+anthropic>=0.29.1
+colorama>=0.4.6
+
+
