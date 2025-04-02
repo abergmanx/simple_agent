@@ -13,21 +13,26 @@ This implementation uses Claude 3.7 to:
 
 ### 1. Provide an Image
 Simply specify the path to your truss image in `simple_truss_agent.py`:
+
 ```python
-image_path = "./images/book_truss.png"
-truss_chat(image_path)
+if __name__ == "__main__":
+    # Specify the image path here - users can easily change this line
+    image_path = "./images/book_truss.png"
+    truss_chat(image_path) 
 ```
 
-![Truss Input](readme_images/simple_truss.png)
+<img src="readme_images/simple_truss.png" width="600" alt="Truss Input">
 
 ### 2. Image Analysis
-The agent analyzes the image and extracts the truss geometry, including:
+Run your code. The agent analyzes the image and extracts the truss geometry, including:
 - Node locations
 - Element connections
 - Applied forces
 - Support conditions
+- Area (A)
+- Young's modulus (E)
 
-![Analysis Results](readme_images/simple_truss_result.png)
+<img src="readme_images/simple_truss_result.png" width="600" alt="Analysis Results">
 
 ### 3. Interactive Analysis
 Chat with the agent to:
@@ -36,7 +41,7 @@ Chat with the agent to:
 - Get detailed results
 - Ask engineering questions
 
-![Terminal Interaction](readme_images/simple_truss_agent.jpg)
+<img src="readme_images/simple_truss_agent.png" width="600" alt="Terminal Interaction">
 
 ## Setup
 
@@ -65,7 +70,7 @@ The agent can:
 Example commands:
 ```
 > Run analysis with E=200e9 Pa and A=0.001 m²
-> Increase the hight of the truss by 2 meters.
+> Increase the height of the truss by 2 meters
 > Find the smallest IPE profile we can use, while keeping the stress under 200 MPa
 ```
 
@@ -78,7 +83,7 @@ Example commands:
 
 ## Input Requirements
 
-- Clear truss image. 
+- Clear truss image
 
 ## License
 
