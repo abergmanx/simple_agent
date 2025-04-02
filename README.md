@@ -36,7 +36,7 @@ Chat with the agent to:
 - Get detailed results
 - Ask engineering questions
 
-![Terminal Interaction](readme_images/simple_truss_agent.png)
+![Terminal Interaction](readme_images/simple_truss_agent.jpg)
 
 ## Setup
 
